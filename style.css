@@ -282,6 +282,64 @@ iframe {
   border-color: #000;
   color: #000;
 }
+.button--sm {
+  font-size: 14px;
+  line-height: 46px;
+  border-radius: 25px;
+  position: relative;
+  left: 120px;
+}
+
+.contact {
+  max-width: 560px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  position: relative;
+  right: 80px;
+}
+@media screen and (max-width: 640px) {
+  .contact {
+    grid-template-columns: 1fr;
+    position: none;
+    right: 0;
+  }
+}
+.contact__label {
+  text-align: right;
+  padding-top: 10px;
+}
+@media screen and (max-width: 640px) {
+  .contact__label {
+    text-align: left;
+    padding-top: 0;
+  }
+}
+.contact__footer {
+  grid-column: 2/3;
+  margin-top: 16px;
+}
+@media screen and (max-width: 640px) {
+  .contact__footer {
+    grid-column: 1/2;
+  }
+}
+
+.input {
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 3px;
+  padding: 8px;
+}
+.input--textarea {
+  height: 160px;
+}
+
+.required {
+  color: #de3f3f;
+  margin-left: 3px;
+}
 
 .footer {
   padding: 16px;
