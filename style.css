@@ -5,6 +5,7 @@
   padding: 0 16px;
 }
 
+/*ヘッダーｃｓｓ*/
 .header {
   padding: 0 16px;
   display: flex;
@@ -19,10 +20,21 @@
   background: rgba(0, 0, 0, .8);
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
+@media screen and (max-width: 640px) {
+  .header {
+    font-size: 24px;
+  }
+}
+
 
 .gnav {
   display: flex;
   list-style: none;
+}
+@media screen and (max-width: 640px) {
+  .gnav {
+    display: none;
+  }
 }
 
 .gnav__link {
@@ -55,7 +67,11 @@
 .section {
   padding: 80px 0;
 }
+.section:nth-child(odd) {
+  background: #fff;
+}
 
+/*headingセクション*/
 .heading {
   margin-bottom: 64px;
   text-align: center;
@@ -81,6 +97,11 @@
   line-height: 1;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 640px) {
+  .heading__main {
+    font-size: 24px;
+  }
+}
 .heading__sub {
   font-size: 13px;
   font-weight: normal;
@@ -88,10 +109,16 @@
   color: rgba(0,0,0,.6);
 }
 
+/*ptofileセクション*/
 .profile {
   display: flex;
   max-width: 640px;
   margin: 0 auto;
+}
+@media screen and (max-width: 640px) {
+  .profile {
+    display: block;
+  }
 }
 .profile__photo {
   border-radius: 50%;
@@ -99,6 +126,11 @@
   height: 160px;
   margin-right: 24px;
   background: center/cover url(/profile.png);
+}
+@media screen and (max-width: 640px) {
+  .profile__photo {
+    margin: 0 auto 16px;
+  }
 }
 .profile__body {
   flex: 1;
@@ -109,11 +141,56 @@
   line-height: 1;
   font-weight: bold;
 }
+@media screen and (max-width: 640px) {
+  .profile__name {
+    text-align: center;
+  }
+}
 .profile__name rt {
   font-weight: normal;
   color: rgba(0, 0, 0, .6);
 }
 .profile__text {
+  line-height: 1.8;
+}
+
+/*skillセクション*/
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+  overflow: hidden;
+}
+.skill {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top right, #000, #2d033a);
+  padding: 24px;
+  height: 100%;
+}
+.skill__icon {
+  margin-bottom: 32px;
+}
+.skill__icon img {
+  height: 80px;
+}
+.skill__title {
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.skill__description {
+  font-size: 13px;
+  color: rgba(255, 255, 255, .6);
   line-height: 1.8;
 }
 
@@ -184,15 +261,33 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 640px) {
+  .footer {
+    display: block;
+  }
+}
 .footer-nav {
   display: flex;
   list-style: none;
+}
+@media screen and (max-width: 640px) {
+  .footer-nav {
+    display: block;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
 }
 .footer-nav__item + .footer-nav__item:before {
   content: "|";
   margin: 0 8px;
 }
+@media screen and (max-width: 640px) {
+  .footer-nav__item + .footer-nav__item:before {
+    display: none;
+  }
+}
 .footer-nav__link {
   text-decoration: none;
   color: inherit;
 }
+
