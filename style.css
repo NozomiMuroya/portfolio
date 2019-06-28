@@ -123,6 +123,7 @@ img {
 iframe {
   display: block;
   width: 100%;
+  border: none;
 }
 @media screen and (max-width: 640px) {
   iframe {
