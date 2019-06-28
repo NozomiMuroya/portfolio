@@ -196,7 +196,7 @@ iframe {
   flex: 1;
 }
 .profile__name {
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 16px;
   line-height: 1;
   font-weight: bold;
@@ -212,6 +212,7 @@ iframe {
 }
 .profile__text {
   line-height: 1.8;
+  font-size: 32px;
 }
 .twitter {
   text-align: center;
