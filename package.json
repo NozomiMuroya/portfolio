@@ -1,7 +1,6 @@
 {
   "name": "test-html",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -26,5 +25,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "^2.6.5"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }
