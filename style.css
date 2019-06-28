@@ -298,6 +298,12 @@ iframe {
   position: relative;
   left: 120px;
 }
+@media screen and (max-width: 640px) {
+  .button--sm {
+    margin: 0 auto;
+  }
+}
+
 
 .contact {
   max-width: 560px;
@@ -311,7 +317,6 @@ iframe {
 @media screen and (max-width: 640px) {
   .contact {
     grid-template-columns: 1fr;
-    position: none;
     right: 0;
   }
 }
