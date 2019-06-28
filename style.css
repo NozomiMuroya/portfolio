@@ -215,7 +215,15 @@ iframe {
 .profile__text {
   line-height: 1.4;
   font-size: 32px;
+  margin-bottom: 16px;
 }
+
+.sns-icon {
+  padding: 8px;
+  font-size: 24px;
+  display: inline-block;
+}
+
 .twitter {
   text-align: center;
   max-width: 640px;
