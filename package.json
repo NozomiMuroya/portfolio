@@ -24,7 +24,8 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.0.9",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-webserver": "^0.9.1"
   },
   "dependencies": {},
   "description": ""
