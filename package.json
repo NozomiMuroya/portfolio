@@ -26,7 +26,5 @@
     "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-webserver": "^0.9.1"
-  },
-  "dependencies": {},
-  "description": ""
+  }
 }

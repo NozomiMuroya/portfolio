@@ -8,21 +8,18 @@
   display: inline-block;
   color: #fff;
   text-decoration: none;
-}
-
-.button--black {
+  &--black {
   border-color: #000;
   color: #000;
-}
-.button--sm {
+  }
+  &--button--sm {
   font-size: 14px;
   line-height: 46px;
   border-radius: 25px;
   position: relative;
   left: 120px;
-}
-@include sp {
-  .button--sm {
+  @include sp {
     margin: 0 auto;
   }
+ }
 }
